@@ -1,0 +1,101 @@
+.page {
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  width: 100%;
+  background: #222;
+  padding: 10px;
+  place-self: center;
+  margin-top: 0px;
+}
+.navbar div {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.mainContent h1 {
+  margin-bottom: 0;
+}
+.author {
+  color: purple;
+  margin-top: 0;
+}
+.date {
+  color: #555;
+  font-size: 14px;
+}
+.imagePlaceholder {
+  background: #ccc;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin: 20px 0;
+}
+.heading {
+  font-weight: bold;
+}
+.sidebar h3 {
+  margin-top: 0;
+}
+.searchBox{
+  height: 15%;
+  background: #f2f2f2;
+  padding: 30px;
+}
+.searchBox input {
+  width: 90%;
+  padding: 8px;
+  margin-top: 5px;
+}
+.categories{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #f2f2f2;
+  padding: 30px;
+}
+.categories div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: blue;
+}
+.widget {
+  background: #f2f2f2;
+  padding: 25px;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #f9f9f9;
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 1024px) {
+  .grid {
+    /* width: 100%; */
+    grid-template-columns: 2fr 1fr;
+  }
+  .footer {
+    margin-top: 20vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
