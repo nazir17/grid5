@@ -4,20 +4,22 @@
 .navbar {
   width: 100%;
   background: #222;
-  padding: 10px;
+  padding: 20px;
   place-self: center;
   margin-top: 0px;
 }
 .navbar div {
   display: flex;
   gap: 20px;
+  padding: 2px;
   color: white;
 }
 .grid {
   display: grid;
+  width: 100%;
   grid-template-columns: 3fr 1fr;
   gap: 20px;
-  padding: 20px;
+  padding: 0px 20px 0px 20px;
 }
 .mainContent h1 {
   margin-bottom: 0;
@@ -45,15 +47,38 @@
 .sidebar h3 {
   margin-top: 0;
 }
-.searchBox{
-  height: 15%;
+.searchBox {
+  margin-bottom: 20px;
   background: #f2f2f2;
   padding: 30px;
 }
-.searchBox input {
-  width: 90%;
-  padding: 8px;
+
+.search {
+  display: flex;
+  align-items: center;
   margin-top: 5px;
+}
+
+.search input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search button {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-left: none;
+  padding: 6px 12px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search button:hover {
+  background: #ddd;
 }
 .categories{
   margin-top: 20px;

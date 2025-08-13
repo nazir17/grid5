@@ -43,7 +43,12 @@ export default function Home() {
         <aside className={styles.sidebar}>
           <div className={styles.searchBox}>
             <h3>Blog Search</h3>
-            <input type="text" placeholder="Search..." />
+            <div className={styles.search}>
+              <input type="text" placeholder="Search..." />
+              <button type="button" aria-label="Search">
+                🔍
+              </button>
+            </div>
           </div>
 
           <div className={styles.categories}>
